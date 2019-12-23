@@ -47,7 +47,7 @@ método para especificar o número máximo de objetos a serem criados. Esse mét
 
 Efeitos negativos e positivos do efeito do padrão.
 
-###5.1 Vantagens
+### 5.1 Vantagens
 
 Performance Em casos onde um dado recurso já foi adquiridos pela pool, este fornece vantagens a nível de performance, pois reduz o os custos e tempo necesário para obter e reutilizar recursos, ou seja, tem como objetivo armazenar na pool o maior número de recursos possíveis, retirando os custos de inicialização dos custos de trabalho efectivo. [3] [4]
 
@@ -61,7 +61,7 @@ atrase a libertação de recursos consoante o estado atual do sistema, isto perm
 
 Partilha: Recursos não utilizados podem ser partilhados por vários clientes, o que beneficia os custos associados a memória. [3]
 
-###5.2 Desvantagens
+### 5.2 Desvantagens
 
 Sobrecarga: A gestão de recursos na pool possui custos associados, como tal para ambientes de pouca instanciação os custos para libertaçãoe criação de recursos poderão ser menores aos utilizados no padrão. Também devido a novas evoluções tecnológicas, alternativas como ”garbage collecters” poderão se tornar mais eficientes do que manter guardado um grande número de objetos ”vivos”, mas não utilizados. [3] [9]
 
@@ -83,24 +83,24 @@ Dimensões dos recursos: Grande parte das implementações armazenam os recursos
 
 ## 6 Outros Padrões
 
-###6.1 Mediator
+### 6.1 Mediator
 
 Como referido anteriormente recursos não utilizados podem ser partilhados por vários clientes, o que poderá causar problemas de sincronização no sistema. Uma solução poderá ser a implementação do padrãoMediatorde modo a centralizar a comunicação e realizar a filtragem concorrente. [3]
 
-###6.2 Factory Method
+### 6.2 Factory Method
 
 O Factory Methodpoderá ser usado para encapsular a criação lógica de objetos, desta forma este poderá ser complementado com oObject Poolde modo a realizar a gestão do objeto após a sua criação. [8]
 
-###6.3 Flyweight
+### 6.3 Flyweight
 
 Ambos padrões são muito semelhantes, mas diferem na forma como são utilizados. Enquanto que os objetos napool são utilizados por umúnicos cliente e depois o cliente retorna o objeto de volta para apool, objetos flyweight podem ser utilizados simultâneamente por vários clientes, ou seja objetos flyweight são imutáveis e objetospoolsão mutáveis. [1]
 
-###6.4 Singleton
+### 6.4 Singleton
 
 A maior parte dos Object Pools são implementados como singletons. [7]
 
 
-###6.5 Data Locality
+### 6.5 Data Locality
 
 
 
@@ -108,7 +108,7 @@ O Object Pool poderá ser complementado com o padrãodata localityde modo a aced
 [5][6]
 
 
-###6.6 Leasing
+### 6.6 Leasing
 
 Este padrão ajuda a resolver o problema onde os clientes têm que manualmente libertar os recursos, pois realiza a gestão de utilização recursos, limitando o acesso de um recurso por um período de tempo pré-definido. [3][2]
 
@@ -124,7 +124,7 @@ Resumidamente podemos utilizar oobject poolsempre que existem vários clientes q
 
 ```
 
-###7.1 Gestor de memória
+### 7.1 Gestor de memória
 
 ```
 
@@ -132,7 +132,7 @@ O padrão permite a implementação de gestores de memória eficientes, onde um 
 
 ```
 
-###7.2 Conexões
+### 7.2 Conexões
 
 ```
 
@@ -144,7 +144,7 @@ Talvez a maior utilização deste padrão seja a gestão de conexões, pois abri
 
 ```
 
-###7.3 Servidores Web
+### 7.3 Servidores Web
 
 ```
 
@@ -157,7 +157,7 @@ as tarefas são reutilizadas após realizar uma data tarefa. [3]
 
 ```
 
-###7.4 Desenvolvimento de jogos
+### 7.4 Desenvolvimento de jogos
 
 ```
 
