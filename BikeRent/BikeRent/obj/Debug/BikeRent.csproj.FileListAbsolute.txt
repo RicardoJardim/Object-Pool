@@ -1,0 +1,5 @@
+/Users/leonardoabreu/Desktop/Sintese/BikeRent/BikeRent/bin/Debug/BikeRent.exe
+/Users/leonardoabreu/Desktop/Sintese/BikeRent/BikeRent/bin/Debug/BikeRent.pdb
+/Users/leonardoabreu/Desktop/Sintese/BikeRent/BikeRent/obj/Debug/BikeRent.csprojAssemblyReference.cache
+/Users/leonardoabreu/Desktop/Sintese/BikeRent/BikeRent/obj/Debug/BikeRent.exe
+/Users/leonardoabreu/Desktop/Sintese/BikeRent/BikeRent/obj/Debug/BikeRent.pdb

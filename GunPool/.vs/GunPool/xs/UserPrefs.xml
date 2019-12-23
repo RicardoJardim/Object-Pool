@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{B6DCF97A-D048-47EE-80E9-645FFF427FF3}|Default">
+  <MonoDevelop.Ide.ItemProperties.GunPool PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GunPool/GunShowcase.cs">
+    <Files>
+      <File FileName="GunPool/Program.cs" Line="12" Column="53" />
+      <File FileName="GunPool/Gun.cs" Line="1" Column="1" />
+      <File FileName="GunPool/GunShowcase.cs" Line="45" Column="84" />
+      <File FileName="GunPool/Soldier.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GunPool" expanded="True">
+            <Node name="GunPool" expanded="True">
+              <Node name="GunShowcase.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

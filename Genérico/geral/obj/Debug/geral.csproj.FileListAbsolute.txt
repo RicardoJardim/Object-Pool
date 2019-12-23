@@ -1,0 +1,6 @@
+D:\Universidade\MEI-1\DIS\ObjectPool\geral\geral\bin\Debug\geral.exe.config
+D:\Universidade\MEI-1\DIS\ObjectPool\geral\geral\bin\Debug\geral.exe
+D:\Universidade\MEI-1\DIS\ObjectPool\geral\geral\bin\Debug\geral.pdb
+D:\Universidade\MEI-1\DIS\ObjectPool\geral\geral\obj\Debug\geral.csprojAssemblyReference.cache
+D:\Universidade\MEI-1\DIS\ObjectPool\geral\geral\obj\Debug\geral.exe
+D:\Universidade\MEI-1\DIS\ObjectPool\geral\geral\obj\Debug\geral.pdb

@@ -1,0 +1,6 @@
+D:\Universidade\MEI-1\DIS\Design-Patterns-SOLID\ObjectPool\AluguerBicicletasCarros\AluguerBicicletasCarros\obj\Debug\AluguerBicicletasCarros.csprojAssemblyReference.cache
+D:\Universidade\MEI-1\DIS\Design-Patterns-SOLID\ObjectPool\AluguerBicicletasCarros\AluguerBicicletasCarros\bin\Debug\AluguerBicicletasCarros.exe.config
+D:\Universidade\MEI-1\DIS\Design-Patterns-SOLID\ObjectPool\AluguerBicicletasCarros\AluguerBicicletasCarros\bin\Debug\AluguerBicicletasCarros.exe
+D:\Universidade\MEI-1\DIS\Design-Patterns-SOLID\ObjectPool\AluguerBicicletasCarros\AluguerBicicletasCarros\bin\Debug\AluguerBicicletasCarros.pdb
+D:\Universidade\MEI-1\DIS\Design-Patterns-SOLID\ObjectPool\AluguerBicicletasCarros\AluguerBicicletasCarros\obj\Debug\AluguerBicicletasCarros.exe
+D:\Universidade\MEI-1\DIS\Design-Patterns-SOLID\ObjectPool\AluguerBicicletasCarros\AluguerBicicletasCarros\obj\Debug\AluguerBicicletasCarros.pdb

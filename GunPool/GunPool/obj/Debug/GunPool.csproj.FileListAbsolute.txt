@@ -1,0 +1,5 @@
+/Users/leonardoabreu/Desktop/Sintese/GunPool/GunPool/bin/Debug/GunPool.exe
+/Users/leonardoabreu/Desktop/Sintese/GunPool/GunPool/bin/Debug/GunPool.pdb
+/Users/leonardoabreu/Desktop/Sintese/GunPool/GunPool/obj/Debug/GunPool.csprojAssemblyReference.cache
+/Users/leonardoabreu/Desktop/Sintese/GunPool/GunPool/obj/Debug/GunPool.exe
+/Users/leonardoabreu/Desktop/Sintese/GunPool/GunPool/obj/Debug/GunPool.pdb
