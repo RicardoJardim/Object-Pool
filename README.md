@@ -15,8 +15,7 @@ O padrão object pooling descreve como evitar aquisições e libertações de re
 O desempenho é um ponto fulcral durante o processo de desenvolvimento software e a criação de objetos (instanciação de classes) é um processo dispendioso.
 Enquanto o padrão Prototype ajuda a melhorar o desempenho através da clonagem dos objetos, o padrão Object pooloferece um mecanismo de reutilização de objetos que são dispendiosos de criar.
 Quando é nnecessário trabalhar com um grande número de objetos que são particularmente caros de instanciar e que cada objetoé necessário apenas por um curto período de tempo, o desempenho de toda uma aaplicação pode ser afetado adversamente. Um padrão Object pool pode ser considerado desejável em casos como estes.[7]
-Uma das situação em que este padrão é usado na sua melhor capacidade é nas várias classes padrão doNET Framework, como por exemplo o.NET Framework Data Provider for SQL Server. Como as conexões da base de dados do SQLServer podem ser lentas de criar, umapoolde conexõesé mantida, quando uma conexão fecha, na verdade ela não abandona o link para o SQLServer, [1] invés disso, a conexão é mantida numa pool da qual ela pode ser recuperada ao solicitar uma nova conexão. Isto aumenta substancialmente a velocidade e desempenho das
-operações. [8]
+Uma das situação em que este padrão é usado na sua melhor capacidade é nas várias classes padrão do NET Framework, como por exemplo o.NET Framework Data Provider for SQL Server. Como as conexões da base de dados do SQLServer podem ser lentas de criar, uma pool de conexõesé mantida, quando uma conexão fecha, na verdade ela não abandona o link para o SQLServer, [1] invés disso, a conexão é mantida numa pool da qual ela pode ser recuperada ao solicitar uma nova conexão. Isto aumenta substancialmente a velocidade e desempenho das operações. [8]
 
 ## 3 Problema
 
@@ -34,7 +33,7 @@ tos reutilizáveis que não estão em uso com o objetivo de retorná-los quando 
 Se houver algum objeto reutilizável na pool quando o método acquire() é chamado, este remove um objeto dapoole devolve-o. Se a pool estiver vazia,
 se possível cria um novo objeto, caso contrário espera até que um objeto seja devolvido à coleção.[8]
 Em muitas aplicações do padrão Object pool, há razões para limitar o número total de objetos reutilizáveis que podem existir. A classe ReusablePool terá um
-método para especificar o número máximo de objetos a serem criados. Esse método é indicado no UML comosetMaxPoolSize(). [8]
+método para especificar o número máximo de objetos a serem criados. Esse método é indicado no UML como setMaxPoolSize(). [8]
 
 ## 5 Consequências
 
