@@ -3,15 +3,9 @@
 Ricardo Jardim[2040416], Leonardo Abreu[2067513], João Santos[2095415], and José
 Freitas[2041716]
 
-```
 Universidade da Madeira, Madeira, PT
-```
 
-```
 Abstract.Nesta síntese iremos realizar uma descrição do padrão de desenho Object Pool, também conhecido por Pooling, onde seguimos a estrutura utilizada no livro do GoF.
-```
-
-```
 
 ## 1 Nome
 
@@ -49,7 +43,7 @@ Efeitos negativos e positivos do efeito do padrão.
 
 ### 5.1 Vantagens
 
-Performance Em casos onde um dado recurso já foi adquiridos pela pool, este fornece vantagens a nível de performance, pois reduz o os custos e tempo necesário para obter e reutilizar recursos, ou seja, tem como objetivo armazenar na pool o maior número de recursos possíveis, retirando os custos de inicialização dos custos de trabalho efectivo. [3] [4]
+Performance Em casos onde um dado recurso já foi adquiridos pela pool, este fornece vantagens a nível de performance, pois reduz o os custos e tempo necesário para obter e reutilizar recursos, ou seja, tem como objetivo armazenar na pool o maior número de recursos possíveis, retirando os custos de inicialização dos custos de trabalho efectivo. [3][4]
 
 Previsibilidade: Grande parte dos recursos armazenados possuem custos temporais determinísticos, através de uma boa implementação do padrão é possível
 obter uma previsão precisa dos custos associados à procura e execução dos recursos presentes na pool. [3]
@@ -63,7 +57,7 @@ Partilha: Recursos não utilizados podem ser partilhados por vários clientes, o
 
 ### 5.2 Desvantagens
 
-Sobrecarga: A gestão de recursos na pool possui custos associados, como tal para ambientes de pouca instanciação os custos para libertaçãoe criação de recursos poderão ser menores aos utilizados no padrão. Também devido a novas evoluções tecnológicas, alternativas como ”garbage collecters” poderão se tornar mais eficientes do que manter guardado um grande número de objetos ”vivos”, mas não utilizados. [3] [9]
+Sobrecarga: A gestão de recursos na pool possui custos associados, como tal para ambientes de pouca instanciação os custos para libertaçãoe criação de recursos poderão ser menores aos utilizados no padrão. Também devido a novas evoluções tecnológicas, alternativas como ”garbage collecters” poderão se tornar mais eficientes do que manter guardado um grande número de objetos ”vivos”, mas não utilizados. [3][9]
 
 Complexidade: Clientes têm que manualmente libertar recursos para a pool.
 [3]
@@ -74,8 +68,7 @@ Sincronização: Em ambientes concorrentes, pedidos para a pool têm que ser sin
 - acquire, de modo a não retornar o mesmo recursos a diferentes clientes. [7]
 - release, sincronização interna ao sistema necessária. [7]
 
-
-Recursos expirados: Como já referido, os recursos têm que ser manualmente libertados da pool. Existem diversos exemplos onde o cliente se esquece de o fazer, o que provoca desperdício da utilização de memória e consequentemente problemas de performance. [3] [7]
+Recursos expirados: Como já referido, os recursos têm que ser manualmente libertados da pool. Existem diversos exemplos onde o cliente se esquece de o fazer, o que provoca desperdício da utilização de memória e consequentemente problemas de performance. [3][7]
 
 Recursos limitados:A pool é responsável pela partilha e reutilização de recursos, logo poderá ocorrer que o número de recursos armazenados exceda o limite permitido pelo sistema, caso isto aconteça, o programa retorna uma exceção e fica em espera até que um recurso seja libertado. [7]
 
@@ -99,78 +92,36 @@ Ambos padrões são muito semelhantes, mas diferem na forma como são utilizados
 
 A maior parte dos Object Pools são implementados como singletons. [7]
 
-
 ### 6.5 Data Locality
-
-
 
 O Object Pool poderá ser complementado com o padrãodata localityde modo a aceder a memória recentemente utilizada e otimizar a velocidade do sistema.
 [5][6]
-
 
 ### 6.6 Leasing
 
 Este padrão ajuda a resolver o problema onde os clientes têm que manualmente libertar os recursos, pois realiza a gestão de utilização recursos, limitando o acesso de um recurso por um período de tempo pré-definido. [3][2]
 
-```
-
 ## 7 Utilizações
-
-```
 
 Resumidamente podemos utilizar oobject poolsempre que existem vários clientes que necessitam do mesmo recurso stateless com custos de criação elevados [7], quando é necessário criar e destruir objetos ou quando cada objeto encapsula um recurso que possui custos elevados de obter e pode ser reutilizado. [6]
 
-```
-
-```
-
 ### 7.1 Gestor de memória
-
-```
 
 O padrão permite a implementação de gestores de memória eficientes, onde um gestor possui um certo número depoolsde dimensões diferentes. Quando e necessário alocar um bloco, o gestor encontra um espaço de tamanho apropriado e armazena o bloco. [6]
 
-```
-
 ### 7.2 Conexões
-
-```
-
-```
 
 Talvez a maior utilização deste padrão seja a gestão de conexões, pois abrir várias conexões pode afetar a performance, devido aos seus custos de criação e excesso de conexões abertas simultâneamente. Desta forma o object pool permite reutilizar e partilhar conexões, otimizando o sistema. [7]
 
-```
-
-```
-
 ### 7.3 Servidores Web
-
-```
-
-```
 
 Este padrão é também utilizado para gerir de forma eficiente tarefas num servidor web. A criação de tarefas para muitos utilizadores concorrentesé ineficiente, logo
 as tarefas são reutilizadas após realizar uma data tarefa. [3]
 
-```
-
-```
-
 ### 7.4 Desenvolvimento de jogos
-
-```
-
-```
 
 Finalmente outro uso comum deste padrãoé no desenvolvimento de jogos, onde poderá ser utilizado para gestão de entidades, efeitos visuais, efeitos sonoros...
 [6]
-
-```
-
-```
-
-```
 
 ## References
 
@@ -194,7 +145,3 @@ Finalmente outro uso comum deste padrãoé no desenvolvimento de jogos, onde pod
    https://sourcemaking.com/designpatterns/objectpool.
 9. Wikipedia. 2012. Object pool pattern. (2012).
    https://en.wikipedia.org/wiki/Objectpoolpattern.
-
-```
-
-```
