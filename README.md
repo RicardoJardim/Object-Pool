@@ -8,21 +8,18 @@ Universidade da Madeira, Madeira, PT
 ```
 
 ```
-Abstract.Nesta síntese iremos realizar uma descrição do padrão de
-desenho Object Pool, também conhecido porPooling, onde seguimos a
-estrutura utilizada no livro do GoF.
+Abstract.Nesta síntese iremos realizar uma descrição do padrão de desenho Object Pool, também conhecido por Pooling, onde seguimos a estrutura utilizada no livro do GoF.
 ```
 
 ```
 
 ## 1 Nome
 
-O padrão object pooling descreve como evitar aquisições e libertações de recursos
-de custos elevados através da reciclagem de recursos que não necessita.
+O padrão object pooling descreve como evitar aquisições e libertações de recursos de custos elevados através da reciclagem de recursos que não necessita.
 
 ## 2 Contexto
 
-O desempenhoé um ponto fulcral durante o processo de desenvolvimento software e a criação de objetos (instanciação de classes) é um processo dispendioso.
+O desempenho é um ponto fulcral durante o processo de desenvolvimento software e a criação de objetos (instanciação de classes) é um processo dispendioso.
 Enquanto o padrão Prototype ajuda a melhorar o desempenho através da clonagem dos objetos, o padrão Object pooloferece um mecanismo de reutilização de objetos que são dispendiosos de criar.
 Quando é nnecessário trabalhar com um grande número de objetos que são particularmente caros de instanciar e que cada objetoé necessário apenas por um curto período de tempo, o desempenho de toda uma aaplicação pode ser afetado adversamente. Um padrão Object pool pode ser considerado desejável em casos como estes.[7]
 Uma das situação em que este padrão é usado na sua melhor capacidade é nas várias classes padrão doNET Framework, como por exemplo o.NET Framework Data Provider for SQL Server. Como as conexões da base de dados do SQLServer podem ser lentas de criar, umapoolde conexõesé mantida, quando uma conexão fecha, na verdade ela não abandona o link para o SQLServer, [1] invés disso, a conexão é mantida numa pool da qual ela pode ser recuperada ao solicitar uma nova conexão. Isto aumenta substancialmente a velocidade e desempenho das
