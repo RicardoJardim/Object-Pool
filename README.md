@@ -25,6 +25,8 @@ criação de um novo objeto simplesmente pedindo a essa mesma pool um que já te
 
 ## 4 Solução
 
+![Object Pool UML](/img/img.png)
+
 O diagrama UML mostra-nos a estrutura do padrão Object pool, onde é possível verificar a sua influência em outros padrões, como por exemplo singleton através
 do método getInstance() para criar um objeto da classe ReusablePool. O método acquire(), é responsável por criar o objeto e armazená-lo na pool após a sua
 utilização. Finalmente o método release(), é responsável por libertar o objeto, e inseri-lo nos objetos disponíveis para serem utilizados. [1]
