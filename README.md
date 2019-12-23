@@ -36,11 +36,7 @@ se possível cria um novo objeto, caso contrário espera até que um objeto seja
 Em muitas aplicações do padrão Object pool, há razões para limitar o número total de objetos reutilizáveis que podem existir. A classe ReusablePool terá um
 método para especificar o número máximo de objetos a serem criados. Esse método é indicado no UML como setMaxPoolSize(). [8]
 
-## 5-Consequências
-
-Efeitos negativos e positivos do efeito do padrão.
-
-### 5.1-Vantagens
+## 5-Vantagens
 
 Performance: Em casos onde um dado recurso já foi adquiridos pela pool, este fornece vantagens a nível de performance, pois reduz o custos e tempo necesário para obter e reutilizar recursos, ou seja, tem como objetivo armazenar na pool o maior número de recursos possíveis, retirando os custos de inicialização dos custos de trabalho efectivo. [3][4]
 
@@ -54,7 +50,7 @@ atrase a libertação de recursos consoante o estado atual do sistema, isto perm
 
 Partilha: Recursos não utilizados podem ser partilhados por vários clientes, o que beneficia os custos associados a memória. [3]
 
-### 5.2-Desvantagens
+## 6-Desvantagens
 
 Sobrecarga: A gestão de recursos na pool possui custos associados, como tal para ambientes de pouca instanciação os custos para libertaçãoe criação de recursos poderão ser menores aos utilizados no padrão. Também devido a novas evoluções tecnológicas, alternativas como ”garbage collecters” poderão se tornar mais eficientes do que manter guardado um grande número de objetos ”vivos”, mas não utilizados. [3][9]
 
@@ -73,51 +69,51 @@ Recursos limitados:A pool é responsável pela partilha e reutilização de recu
 
 Dimensões dos recursos: Grande parte das implementações armazenam os recursos da pool numa lista de objetos, como tal a memória dedicada para cada elemento será fixa. Isto faz com que seja necessário implementar a lista com o tamanho do objeto maior que possuir, obviamente isto poderá trazer grandes complicações futuras, onde um objeto relativamente maior que os outros afeta todo o sistema negativamente. [6] Esta caraterística poderá ser contornada criando múltiplas sub-pools onde ficam armazenados apenas objetos do mesmo tipo. [3]
 
-## 6-Outros Padrões
+## 7-Outros Padrões
 
-### 6.1-Mediator
+### 7.1-Mediator
 
 Como referido anteriormente recursos não utilizados podem ser partilhados por vários clientes, o que poderá causar problemas de sincronização no sistema. Uma solução poderá ser a implementação do padrão Mediator de modo a centralizar a comunicação e realizar a filtragem concorrente. [3]
 
-### 6.2-Factory Method
+### 7.2-Factory Method
 
 O Factory Method poderá ser usado para encapsular a criação lógica de objetos, desta forma este poderá ser complementado com oObject Poolde modo a realizar a gestão do objeto após a sua criação. [8]
 
-### 6.3-Flyweight
+### 7.3-Flyweight
 
 Ambos padrões são muito semelhantes, mas diferem na forma como são utilizados. Enquanto que os objetos na pool são utilizados por um únicos cliente e depois o cliente retorna o objeto de volta para a pool, objetos flyweight podem ser utilizados simultâneamente por vários clientes, ou seja objetos flyweight são imutáveis e objetos pool são mutáveis. [1]
 
-### 6.4-Singleton
+### 7.4-Singleton
 
 A maior parte dos Object Pools são implementados como singletons. [7]
 
-### 6.5-Data Locality
+### 7.5-Data Locality
 
 O Object Pool poderá ser complementado com o padrão data locality de modo a aceder a memória recentemente utilizada e otimizar a velocidade do sistema.
 [5][6]
 
-### 6.6-Leasing
+### 7.6-Leasing
 
 Este padrão ajuda a resolver o problema onde os clientes têm que manualmente libertar os recursos, pois realiza a gestão de utilização recursos, limitando o acesso de um recurso por um período de tempo pré-definido. [3][2]
 
-## 7-Utilizações
+## 8-Utilizações
 
 Resumidamente podemos utilizar o object pool sempre que existem vários clientes que necessitam do mesmo recurso stateless com custos de criação elevados [7], quando é necessário criar e destruir objetos ou quando cada objeto encapsula um recurso que possui custos elevados de obter e pode ser reutilizado. [6]
 
-### 7.1-Gestor de memória
+### 8.1-Gestor de memória
 
 O padrão permite a implementação de gestores de memória eficientes, onde um gestor possui um certo número de pools de dimensões diferentes. Quando e necessário alocar um bloco, o gestor encontra um espaço de tamanho apropriado e armazena o bloco. [6]
 
-### 7.2-Conexões
+### 8.2-Conexões
 
 Talvez a maior utilização deste padrão seja a gestão de conexões, pois abrir várias conexões pode afetar a performance, devido aos seus custos de criação e excesso de conexões abertas simultâneamente. Desta forma o object pool permite reutilizar e partilhar conexões, otimizando o sistema. [7]
 
-### 7.3-Servidores Web
+### 8.3-Servidores Web
 
 Este padrão é também utilizado para gerir de forma eficiente tarefas num servidor web. A criação de tarefas para muitos utilizadores concorrentesé ineficiente, logo
 as tarefas são reutilizadas após realizar uma data tarefa. [3]
 
-### 7.4-Desenvolvimento de jogos
+### 8.4-Desenvolvimento de jogos
 
 Finalmente outro uso comum deste padrãoé no desenvolvimento de jogos, onde poderá ser utilizado para gestão de entidades, efeitos visuais, efeitos sonoros, entre outros.
 [6]
