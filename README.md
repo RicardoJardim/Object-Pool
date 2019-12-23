@@ -1,9 +1,8 @@
 # Trabalho de Síntese: Object Pool
 
-Ricardo Jardim[2040416], Leonardo Abreu[2067513], João Santos[2095415], and José
-Freitas[2041716]
+## Ricardo Jardim[2040416], Leonardo Abreu[2067513], João Santos[2095415], and José Freitas[2041716]
 
-Universidade da Madeira, Madeira, PT
+## Universidade da Madeira, Madeira, PT
 
 Abstract.Nesta síntese iremos realizar uma descrição do padrão de desenho Object Pool, também conhecido por Pooling, onde seguimos a estrutura utilizada no livro do GoF.
 
